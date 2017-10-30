@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KJShortPhotoAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="255"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="255"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Xr-zd-5w3">
+                        <rect key="frame" x="0.0" y="0.0" width="282" height="255"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-yI-jTJ">
+                        <rect key="frame" x="257" y="2" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jpZ-yI-jTJ" secondAttribute="height" multiplier="1:1" id="aYN-px-fOB"/>
+                        </constraints>
+                        <state key="normal" image="kj_album_normal"/>
+                        <state key="selected" image="kj_album_selected"/>
+                        <connections>
+                            <action selector="onSelectButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QW2-aN-ePc"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jpZ-yI-jTJ" secondAttribute="trailing" constant="2" id="94n-Mb-XwO"/>
+                <constraint firstAttribute="trailing" secondItem="1Xr-zd-5w3" secondAttribute="trailing" id="Blf-yT-BWP"/>
+                <constraint firstItem="jpZ-yI-jTJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="EpZ-RU-Jt2"/>
+                <constraint firstAttribute="bottom" secondItem="1Xr-zd-5w3" secondAttribute="bottom" id="Ept-Uo-wSg"/>
+                <constraint firstItem="1Xr-zd-5w3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gMB-MY-gZx"/>
+                <constraint firstItem="1Xr-zd-5w3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kuD-iC-dG7"/>
+            </constraints>
+            <size key="customSize" width="282" height="255"/>
+            <connections>
+                <outlet property="btnSelected" destination="jpZ-yI-jTJ" id="blb-eU-bfC"/>
+                <outlet property="imgView" destination="1Xr-zd-5w3" id="A2p-bl-QRW"/>
+            </connections>
+            <point key="canvasLocation" x="142" y="154.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="kj_album_normal" width="23" height="23"/>
+        <image name="kj_album_selected" width="23" height="23"/>
+    </resources>
+</document>

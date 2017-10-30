@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="KJAlbumListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cWL-6z-eH4">
+                        <rect key="frame" x="13" y="19" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="ICA-2J-mTs"/>
+                            <constraint firstAttribute="width" secondItem="cWL-6z-eH4" secondAttribute="height" multiplier="1:1" id="qwQ-Om-imv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kj_album_list_selected" translatesAutoresizingMaskIntoConstraints="NO" id="6u4-d5-TEj">
+                        <rect key="frame" x="48" y="21" width="13" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机胶卷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRz-ev-OZY">
+                        <rect key="frame" x="73" y="35" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU2-vx-LHY">
+                        <rect key="frame" x="137.5" y="38.5" width="8" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="nRz-ev-OZY" firstAttribute="centerY" secondItem="cWL-6z-eH4" secondAttribute="centerY" id="2tp-xN-TWu"/>
+                    <constraint firstItem="cU2-vx-LHY" firstAttribute="bottom" secondItem="nRz-ev-OZY" secondAttribute="bottom" id="7xW-Sw-Lvw"/>
+                    <constraint firstItem="cU2-vx-LHY" firstAttribute="leading" secondItem="nRz-ev-OZY" secondAttribute="trailing" constant="3" id="G9j-rc-d2c"/>
+                    <constraint firstItem="6u4-d5-TEj" firstAttribute="trailing" secondItem="cWL-6z-eH4" secondAttribute="trailing" constant="-2" id="Uog-Xm-O7a"/>
+                    <constraint firstItem="cWL-6z-eH4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ctc-Tl-3Rp"/>
+                    <constraint firstItem="cWL-6z-eH4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="lhW-pL-Yr4"/>
+                    <constraint firstItem="6u4-d5-TEj" firstAttribute="top" secondItem="cWL-6z-eH4" secondAttribute="top" constant="2" id="qfJ-gL-X0m"/>
+                    <constraint firstItem="nRz-ev-OZY" firstAttribute="leading" secondItem="cWL-6z-eH4" secondAttribute="trailing" constant="10" id="xaH-hq-hdQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imgSelected" destination="6u4-d5-TEj" id="4AO-12-mfw"/>
+                <outlet property="imgView" destination="cWL-6z-eH4" id="MFR-jy-V3I"/>
+                <outlet property="labelCount" destination="cU2-vx-LHY" id="SAs-wN-7Bo"/>
+                <outlet property="labelTitle" destination="nRz-ev-OZY" id="gJE-O2-mc2"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="74.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kj_album_list_selected" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,1045 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CA0136C933F94FD5C22081F /* libPods-KJAlbumDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30D78E06BA9336D7DBF3491 /* libPods-KJAlbumDemo.a */; };
+		9602853F1F9F354E0089A90C /* KJEditVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9602853E1F9F354E0089A90C /* KJEditVideoViewController.m */; };
+		960531711F6246DE00977EC0 /* DLHDActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 960531701F6246DE00977EC0 /* DLHDActivityIndicator.m */; };
+		960561BC1F63DDFF0064A0DC /* KJCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960561BA1F63DDFF0064A0DC /* KJCollectionCell.m */; };
+		960561BD1F63DDFF0064A0DC /* KJCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960561BB1F63DDFF0064A0DC /* KJCollectionCell.xib */; };
+		960694291F5EB27600550791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694281F5EB27600550791 /* main.m */; };
+		9606942C1F5EB27600550791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606942B1F5EB27600550791 /* AppDelegate.m */; };
+		9606942F1F5EB27600550791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606942E1F5EB27600550791 /* ViewController.m */; };
+		960694321F5EB27600550791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960694301F5EB27600550791 /* Main.storyboard */; };
+		960694341F5EB27600550791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960694331F5EB27600550791 /* Assets.xcassets */; };
+		960694371F5EB27600550791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960694351F5EB27600550791 /* LaunchScreen.storyboard */; };
+		960694421F5EB27700550791 /* KJAlbumDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694411F5EB27700550791 /* KJAlbumDemoTests.m */; };
+		9606944D1F5EB27700550791 /* KJAlbumDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606944C1F5EB27700550791 /* KJAlbumDemoUITests.m */; };
+		9606947F1F5EB48C00550791 /* KJAlbumBrowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606945F1F5EB48C00550791 /* KJAlbumBrowsController.m */; };
+		960694801F5EB48C00550791 /* KJAlbumListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694621F5EB48C00550791 /* KJAlbumListCell.m */; };
+		960694811F5EB48C00550791 /* KJAlbumListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960694631F5EB48C00550791 /* KJAlbumListCell.xib */; };
+		960694821F5EB48C00550791 /* KJShortPhotoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694651F5EB48C00550791 /* KJShortPhotoAlbumCell.m */; };
+		960694831F5EB48C00550791 /* KJShortPhotoAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960694661F5EB48C00550791 /* KJShortPhotoAlbumCell.xib */; };
+		960694841F5EB48C00550791 /* KJShortVideoAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694681F5EB48C00550791 /* KJShortVideoAlbumCell.m */; };
+		960694851F5EB48C00550791 /* KJShortVideoAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960694691F5EB48C00550791 /* KJShortVideoAlbumCell.xib */; };
+		960694861F5EB48C00550791 /* KJAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606946C1F5EB48C00550791 /* KJAlbumModel.m */; };
+		960694871F5EB48C00550791 /* KJPHAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606946E1F5EB48C00550791 /* KJPHAsset.m */; };
+		960694881F5EB48C00550791 /* KJCustomCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694711F5EB48C00550791 /* KJCustomCameraController.m */; };
+		960694891F5EB48C00550791 /* KJImageAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694731F5EB48C00550791 /* KJImageAlbumController.m */; };
+		9606948A1F5EB48C00550791 /* KJSystemPhotoAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694761F5EB48C00550791 /* KJSystemPhotoAlbumController.m */; };
+		9606948B1F5EB48C00550791 /* KJShortVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694791F5EB48C00550791 /* KJShortVideoPlayer.m */; };
+		9606948C1F5EB48C00550791 /* KJSystemVideoAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606947B1F5EB48C00550791 /* KJSystemVideoAlbumController.m */; };
+		9606948D1F5EB48C00550791 /* KJVideoAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9606947D1F5EB48C00550791 /* KJVideoAlbumController.m */; };
+		960694A41F5EB59900550791 /* KJUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694A31F5EB59900550791 /* KJUtility.m */; };
+		960694B41F5EB68200550791 /* SGImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694A81F5EB68200550791 /* SGImageButton.m */; };
+		960694B51F5EB68200550791 /* SGNavigationItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694AA1F5EB68200550791 /* SGNavigationItemTitleView.m */; };
+		960694B61F5EB68200550791 /* SGSegmentedControlBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694AD1F5EB68200550791 /* SGSegmentedControlBottomView.m */; };
+		960694B71F5EB68200550791 /* SGSegmentedControlDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694AF1F5EB68200550791 /* SGSegmentedControlDefault.m */; };
+		960694B81F5EB68200550791 /* SGSegmentedControlStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694B11F5EB68200550791 /* SGSegmentedControlStatic.m */; };
+		960694B91F5EB68200550791 /* UIView+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694B31F5EB68200550791 /* UIView+SGExtension.m */; };
+		960694BC1F5EB69700550791 /* UIKit+BaseExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694BB1F5EB69700550791 /* UIKit+BaseExtension.m */; };
+		960694C01F5EBAAE00550791 /* KJVideoCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694BF1F5EBAAE00550791 /* KJVideoCameraController.m */; };
+		960694C61F5EBDDE00550791 /* UIImage+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694C31F5EBDDE00550791 /* UIImage+XLExtension.m */; };
+		960694C71F5EBDDE00550791 /* UIView+XLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 960694C51F5EBDDE00550791 /* UIView+XLExtension.m */; };
+		960F46931F98B8CA006D3560 /* FSKGPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F46921F98B8CA006D3560 /* FSKGPUImageBeautyFilter.m */; };
+		960F46941F98B95A006D3560 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 960F468F1F98B853006D3560 /* GPUImageBeautifyFilter.m */; };
+		961E7D261F612ABC002343E2 /* KJVideoCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 961E7D251F612ABC002343E2 /* KJVideoCaptureController.m */; };
+		962C76DC1FA3196100919DEB /* KJSelectedCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C76DB1FA3196100919DEB /* KJSelectedCoverController.m */; };
+		962C76E01FA329F600919DEB /* KJCoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 962C76DE1FA329F500919DEB /* KJCoverViewCell.m */; };
+		962C76E11FA329F600919DEB /* KJCoverViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 962C76DF1FA329F500919DEB /* KJCoverViewCell.xib */; };
+		9640E1451F8CD3E10097AB9A /* KJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9640E1441F8CD3E10097AB9A /* KJProgressView.m */; };
+		966D0DA51FA019AF0038B10F /* KJEditVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 966D0DA31FA019AF0038B10F /* KJEditVideoCell.m */; };
+		966D0DA61FA019AF0038B10F /* KJEditVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DA41FA019AF0038B10F /* KJEditVideoCell.xib */; };
+		966D0DA71FA026130038B10F /* KJFilter.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 96C09EB01F9F4E3C00F39D4C /* KJFilter.geojson */; };
+		966D0DC41FA04FC50038B10F /* music0001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DBC1FA04FC40038B10F /* music0001.mp3 */; };
+		966D0DC51FA04FC50038B10F /* music0003.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DBD1FA04FC50038B10F /* music0003.mp3 */; };
+		966D0DC61FA04FC50038B10F /* music0002.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DBE1FA04FC50038B10F /* music0002.mp3 */; };
+		966D0DC81FA04FC50038B10F /* music0004.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DC01FA04FC50038B10F /* music0004.mp3 */; };
+		966D0DCD1FA0513D0038B10F /* image0003.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DC91FA0513D0038B10F /* image0003.jpeg */; };
+		966D0DCE1FA0513D0038B10F /* image0004.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DCA1FA0513D0038B10F /* image0004.jpeg */; };
+		966D0DCF1FA0513D0038B10F /* image0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DCB1FA0513D0038B10F /* image0001.jpeg */; };
+		966D0DD01FA0513D0038B10F /* image0002.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 966D0DCC1FA0513D0038B10F /* image0002.jpeg */; };
+		966D0DD31FA07FCB0038B10F /* LFGPUImageEmptyFilter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 966D0DD11FA07FCA0038B10F /* LFGPUImageEmptyFilter.mm */; };
+		96C09EB41F9F56B300F39D4C /* KJCollectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C09EB21F9F56B300F39D4C /* KJCollectionHeadView.m */; };
+		96C09EB51F9F56B300F39D4C /* KJCollectionHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C09EB31F9F56B300F39D4C /* KJCollectionHeadView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9606943E1F5EB27700550791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9606941C1F5EB27600550791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960694231F5EB27600550791;
+			remoteInfo = KJAlbumDemo;
+		};
+		960694491F5EB27700550791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9606941C1F5EB27600550791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 960694231F5EB27600550791;
+			remoteInfo = KJAlbumDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F4BB97581282E5CA433C4D5 /* Pods-KJAlbumDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJAlbumDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KJAlbumDemo/Pods-KJAlbumDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9602853D1F9F354E0089A90C /* KJEditVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJEditVideoViewController.h; sourceTree = "<group>"; };
+		9602853E1F9F354E0089A90C /* KJEditVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJEditVideoViewController.m; sourceTree = "<group>"; };
+		9605316F1F6246DE00977EC0 /* DLHDActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLHDActivityIndicator.h; sourceTree = "<group>"; };
+		960531701F6246DE00977EC0 /* DLHDActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLHDActivityIndicator.m; sourceTree = "<group>"; };
+		960561B91F63DDFF0064A0DC /* KJCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCollectionCell.h; sourceTree = "<group>"; };
+		960561BA1F63DDFF0064A0DC /* KJCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCollectionCell.m; sourceTree = "<group>"; };
+		960561BB1F63DDFF0064A0DC /* KJCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJCollectionCell.xib; sourceTree = "<group>"; };
+		960694241F5EB27600550791 /* KJAlbumDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJAlbumDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		960694281F5EB27600550791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9606942A1F5EB27600550791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9606942B1F5EB27600550791 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9606942D1F5EB27600550791 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9606942E1F5EB27600550791 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		960694311F5EB27600550791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		960694331F5EB27600550791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		960694361F5EB27600550791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		960694381F5EB27600550791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9606943D1F5EB27700550791 /* KJAlbumDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJAlbumDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		960694411F5EB27700550791 /* KJAlbumDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAlbumDemoTests.m; sourceTree = "<group>"; };
+		960694431F5EB27700550791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960694481F5EB27700550791 /* KJAlbumDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJAlbumDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9606944C1F5EB27700550791 /* KJAlbumDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAlbumDemoUITests.m; sourceTree = "<group>"; };
+		9606944E1F5EB27700550791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9606945E1F5EB48C00550791 /* KJAlbumBrowsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJAlbumBrowsController.h; sourceTree = "<group>"; };
+		9606945F1F5EB48C00550791 /* KJAlbumBrowsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJAlbumBrowsController.m; sourceTree = "<group>"; };
+		960694611F5EB48C00550791 /* KJAlbumListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJAlbumListCell.h; sourceTree = "<group>"; };
+		960694621F5EB48C00550791 /* KJAlbumListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJAlbumListCell.m; sourceTree = "<group>"; };
+		960694631F5EB48C00550791 /* KJAlbumListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJAlbumListCell.xib; sourceTree = "<group>"; };
+		960694641F5EB48C00550791 /* KJShortPhotoAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJShortPhotoAlbumCell.h; sourceTree = "<group>"; };
+		960694651F5EB48C00550791 /* KJShortPhotoAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJShortPhotoAlbumCell.m; sourceTree = "<group>"; };
+		960694661F5EB48C00550791 /* KJShortPhotoAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJShortPhotoAlbumCell.xib; sourceTree = "<group>"; };
+		960694671F5EB48C00550791 /* KJShortVideoAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJShortVideoAlbumCell.h; sourceTree = "<group>"; };
+		960694681F5EB48C00550791 /* KJShortVideoAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJShortVideoAlbumCell.m; sourceTree = "<group>"; };
+		960694691F5EB48C00550791 /* KJShortVideoAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KJShortVideoAlbumCell.xib; sourceTree = "<group>"; };
+		9606946B1F5EB48C00550791 /* KJAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJAlbumModel.h; sourceTree = "<group>"; };
+		9606946C1F5EB48C00550791 /* KJAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJAlbumModel.m; sourceTree = "<group>"; };
+		9606946D1F5EB48C00550791 /* KJPHAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJPHAsset.h; sourceTree = "<group>"; };
+		9606946E1F5EB48C00550791 /* KJPHAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJPHAsset.m; sourceTree = "<group>"; };
+		960694701F5EB48C00550791 /* KJCustomCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCustomCameraController.h; sourceTree = "<group>"; };
+		960694711F5EB48C00550791 /* KJCustomCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCustomCameraController.m; sourceTree = "<group>"; };
+		960694721F5EB48C00550791 /* KJImageAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJImageAlbumController.h; sourceTree = "<group>"; };
+		960694731F5EB48C00550791 /* KJImageAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJImageAlbumController.m; sourceTree = "<group>"; };
+		960694751F5EB48C00550791 /* KJSystemPhotoAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJSystemPhotoAlbumController.h; sourceTree = "<group>"; };
+		960694761F5EB48C00550791 /* KJSystemPhotoAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJSystemPhotoAlbumController.m; sourceTree = "<group>"; };
+		960694781F5EB48C00550791 /* KJShortVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJShortVideoPlayer.h; sourceTree = "<group>"; };
+		960694791F5EB48C00550791 /* KJShortVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJShortVideoPlayer.m; sourceTree = "<group>"; };
+		9606947A1F5EB48C00550791 /* KJSystemVideoAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJSystemVideoAlbumController.h; sourceTree = "<group>"; };
+		9606947B1F5EB48C00550791 /* KJSystemVideoAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJSystemVideoAlbumController.m; sourceTree = "<group>"; };
+		9606947C1F5EB48C00550791 /* KJVideoAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJVideoAlbumController.h; sourceTree = "<group>"; };
+		9606947D1F5EB48C00550791 /* KJVideoAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJVideoAlbumController.m; sourceTree = "<group>"; };
+		960694A21F5EB59900550791 /* KJUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJUtility.h; sourceTree = "<group>"; };
+		960694A31F5EB59900550791 /* KJUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJUtility.m; sourceTree = "<group>"; };
+		960694A71F5EB68200550791 /* SGImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGImageButton.h; sourceTree = "<group>"; };
+		960694A81F5EB68200550791 /* SGImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGImageButton.m; sourceTree = "<group>"; };
+		960694A91F5EB68200550791 /* SGNavigationItemTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNavigationItemTitleView.h; sourceTree = "<group>"; };
+		960694AA1F5EB68200550791 /* SGNavigationItemTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNavigationItemTitleView.m; sourceTree = "<group>"; };
+		960694AB1F5EB68200550791 /* SGSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSegmentedControl.h; sourceTree = "<group>"; };
+		960694AC1F5EB68200550791 /* SGSegmentedControlBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSegmentedControlBottomView.h; sourceTree = "<group>"; };
+		960694AD1F5EB68200550791 /* SGSegmentedControlBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSegmentedControlBottomView.m; sourceTree = "<group>"; };
+		960694AE1F5EB68200550791 /* SGSegmentedControlDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSegmentedControlDefault.h; sourceTree = "<group>"; };
+		960694AF1F5EB68200550791 /* SGSegmentedControlDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSegmentedControlDefault.m; sourceTree = "<group>"; };
+		960694B01F5EB68200550791 /* SGSegmentedControlStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSegmentedControlStatic.h; sourceTree = "<group>"; };
+		960694B11F5EB68200550791 /* SGSegmentedControlStatic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSegmentedControlStatic.m; sourceTree = "<group>"; };
+		960694B21F5EB68200550791 /* UIView+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SGExtension.h"; sourceTree = "<group>"; };
+		960694B31F5EB68200550791 /* UIView+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGExtension.m"; sourceTree = "<group>"; };
+		960694BA1F5EB69700550791 /* UIKit+BaseExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+BaseExtension.h"; sourceTree = "<group>"; };
+		960694BB1F5EB69700550791 /* UIKit+BaseExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+BaseExtension.m"; sourceTree = "<group>"; };
+		960694BE1F5EBAAE00550791 /* KJVideoCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJVideoCameraController.h; sourceTree = "<group>"; };
+		960694BF1F5EBAAE00550791 /* KJVideoCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJVideoCameraController.m; sourceTree = "<group>"; };
+		960694C21F5EBDDE00550791 /* UIImage+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLExtension.h"; sourceTree = "<group>"; };
+		960694C31F5EBDDE00550791 /* UIImage+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLExtension.m"; sourceTree = "<group>"; };
+		960694C41F5EBDDE00550791 /* UIView+XLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLExtension.h"; sourceTree = "<group>"; };
+		960694C51F5EBDDE00550791 /* UIView+XLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLExtension.m"; sourceTree = "<group>"; };
+		960F468F1F98B853006D3560 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		960F46901F98B853006D3560 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		960F46911F98B8CA006D3560 /* FSKGPUImageBeautyFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSKGPUImageBeautyFilter.h; sourceTree = "<group>"; };
+		960F46921F98B8CA006D3560 /* FSKGPUImageBeautyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSKGPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		961E7D241F612ABC002343E2 /* KJVideoCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJVideoCaptureController.h; sourceTree = "<group>"; };
+		961E7D251F612ABC002343E2 /* KJVideoCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJVideoCaptureController.m; sourceTree = "<group>"; };
+		962C76DA1FA3196100919DEB /* KJSelectedCoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJSelectedCoverController.h; sourceTree = "<group>"; };
+		962C76DB1FA3196100919DEB /* KJSelectedCoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJSelectedCoverController.m; sourceTree = "<group>"; };
+		962C76DD1FA329F500919DEB /* KJCoverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCoverViewCell.h; sourceTree = "<group>"; };
+		962C76DE1FA329F500919DEB /* KJCoverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCoverViewCell.m; sourceTree = "<group>"; };
+		962C76DF1FA329F500919DEB /* KJCoverViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJCoverViewCell.xib; sourceTree = "<group>"; };
+		9640E1431F8CD3E10097AB9A /* KJProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJProgressView.h; sourceTree = "<group>"; };
+		9640E1441F8CD3E10097AB9A /* KJProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJProgressView.m; sourceTree = "<group>"; };
+		966D0DA21FA019AF0038B10F /* KJEditVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJEditVideoCell.h; sourceTree = "<group>"; };
+		966D0DA31FA019AF0038B10F /* KJEditVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJEditVideoCell.m; sourceTree = "<group>"; };
+		966D0DA41FA019AF0038B10F /* KJEditVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJEditVideoCell.xib; sourceTree = "<group>"; };
+		966D0DBC1FA04FC40038B10F /* music0001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music0001.mp3; sourceTree = "<group>"; };
+		966D0DBD1FA04FC50038B10F /* music0003.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music0003.mp3; sourceTree = "<group>"; };
+		966D0DBE1FA04FC50038B10F /* music0002.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music0002.mp3; sourceTree = "<group>"; };
+		966D0DC01FA04FC50038B10F /* music0004.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music0004.mp3; sourceTree = "<group>"; };
+		966D0DC91FA0513D0038B10F /* image0003.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0003.jpeg; sourceTree = "<group>"; };
+		966D0DCA1FA0513D0038B10F /* image0004.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0004.jpeg; sourceTree = "<group>"; };
+		966D0DCB1FA0513D0038B10F /* image0001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0001.jpeg; sourceTree = "<group>"; };
+		966D0DCC1FA0513D0038B10F /* image0002.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0002.jpeg; sourceTree = "<group>"; };
+		966D0DD11FA07FCA0038B10F /* LFGPUImageEmptyFilter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LFGPUImageEmptyFilter.mm; sourceTree = "<group>"; };
+		966D0DD21FA07FCB0038B10F /* LFGPUImageEmptyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFGPUImageEmptyFilter.h; sourceTree = "<group>"; };
+		96C09EB01F9F4E3C00F39D4C /* KJFilter.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = KJFilter.geojson; sourceTree = "<group>"; };
+		96C09EB11F9F56B300F39D4C /* KJCollectionHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJCollectionHeadView.h; sourceTree = "<group>"; };
+		96C09EB21F9F56B300F39D4C /* KJCollectionHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJCollectionHeadView.m; sourceTree = "<group>"; };
+		96C09EB31F9F56B300F39D4C /* KJCollectionHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJCollectionHeadView.xib; sourceTree = "<group>"; };
+		D71FE55F03A8B987C989279C /* Pods-KJAlbumDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJAlbumDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KJAlbumDemo/Pods-KJAlbumDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F30D78E06BA9336D7DBF3491 /* libPods-KJAlbumDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KJAlbumDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		960694211F5EB27600550791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA0136C933F94FD5C22081F /* libPods-KJAlbumDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9606943A1F5EB27700550791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960694451F5EB27700550791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F4259AAB4F448ADD31A0ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F30D78E06BA9336D7DBF3491 /* libPods-KJAlbumDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9602853C1F9F34FE0089A90C /* KJEditVideo */ = {
+			isa = PBXGroup;
+			children = (
+				9602853D1F9F354E0089A90C /* KJEditVideoViewController.h */,
+				9602853E1F9F354E0089A90C /* KJEditVideoViewController.m */,
+				962C76DA1FA3196100919DEB /* KJSelectedCoverController.h */,
+				962C76DB1FA3196100919DEB /* KJSelectedCoverController.m */,
+			);
+			path = KJEditVideo;
+			sourceTree = "<group>";
+		};
+		9605316E1F6246DE00977EC0 /* TAOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				9605316F1F6246DE00977EC0 /* DLHDActivityIndicator.h */,
+				960531701F6246DE00977EC0 /* DLHDActivityIndicator.m */,
+			);
+			path = TAOverlay;
+			sourceTree = "<group>";
+		};
+		9606941B1F5EB27600550791 = {
+			isa = PBXGroup;
+			children = (
+				960694261F5EB27600550791 /* KJAlbumDemo */,
+				960694401F5EB27700550791 /* KJAlbumDemoTests */,
+				9606944B1F5EB27700550791 /* KJAlbumDemoUITests */,
+				960694251F5EB27600550791 /* Products */,
+				DC62E8FB3CAE00902799AB6D /* Pods */,
+				5F4259AAB4F448ADD31A0ADA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		960694251F5EB27600550791 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				960694241F5EB27600550791 /* KJAlbumDemo.app */,
+				9606943D1F5EB27700550791 /* KJAlbumDemoTests.xctest */,
+				960694481F5EB27700550791 /* KJAlbumDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		960694261F5EB27600550791 /* KJAlbumDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9606945A1F5EB48400550791 /* KJAlbum */,
+				9606942A1F5EB27600550791 /* AppDelegate.h */,
+				9606942B1F5EB27600550791 /* AppDelegate.m */,
+				9606942D1F5EB27600550791 /* ViewController.h */,
+				9606942E1F5EB27600550791 /* ViewController.m */,
+				960694301F5EB27600550791 /* Main.storyboard */,
+				960694331F5EB27600550791 /* Assets.xcassets */,
+				960694351F5EB27600550791 /* LaunchScreen.storyboard */,
+				960694381F5EB27600550791 /* Info.plist */,
+				960694271F5EB27600550791 /* Supporting Files */,
+			);
+			path = KJAlbumDemo;
+			sourceTree = "<group>";
+		};
+		960694271F5EB27600550791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				960694281F5EB27600550791 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		960694401F5EB27700550791 /* KJAlbumDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				960694411F5EB27700550791 /* KJAlbumDemoTests.m */,
+				960694431F5EB27700550791 /* Info.plist */,
+			);
+			path = KJAlbumDemoTests;
+			sourceTree = "<group>";
+		};
+		9606944B1F5EB27700550791 /* KJAlbumDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9606944C1F5EB27700550791 /* KJAlbumDemoUITests.m */,
+				9606944E1F5EB27700550791 /* Info.plist */,
+			);
+			path = KJAlbumDemoUITests;
+			sourceTree = "<group>";
+		};
+		9606945A1F5EB48400550791 /* KJAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				96C09EAF1F9F4E0500F39D4C /* Resource */,
+				9606946A1F5EB48C00550791 /* KJAlbumModel */,
+				960694601F5EB48C00550791 /* KJAlbumCell */,
+				960694A51F5EB66B00550791 /* Vendors */,
+				9602853C1F9F34FE0089A90C /* KJEditVideo */,
+				960694BD1F5EBA8900550791 /* KJVideoCamera */,
+				9606946F1F5EB48C00550791 /* KJCamera */,
+				961E7D231F612AA2002343E2 /* KJVideoCapture */,
+				9606945D1F5EB48C00550791 /* KJAlbumBrows */,
+				960694741F5EB48C00550791 /* KJPhotoAlbum */,
+				960694771F5EB48C00550791 /* KJVideoAlbum */,
+				960694721F5EB48C00550791 /* KJImageAlbumController.h */,
+				960694731F5EB48C00550791 /* KJImageAlbumController.m */,
+				9606947C1F5EB48C00550791 /* KJVideoAlbumController.h */,
+				9606947D1F5EB48C00550791 /* KJVideoAlbumController.m */,
+			);
+			path = KJAlbum;
+			sourceTree = "<group>";
+		};
+		9606945D1F5EB48C00550791 /* KJAlbumBrows */ = {
+			isa = PBXGroup;
+			children = (
+				9606945E1F5EB48C00550791 /* KJAlbumBrowsController.h */,
+				9606945F1F5EB48C00550791 /* KJAlbumBrowsController.m */,
+			);
+			path = KJAlbumBrows;
+			sourceTree = "<group>";
+		};
+		960694601F5EB48C00550791 /* KJAlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				960561B91F63DDFF0064A0DC /* KJCollectionCell.h */,
+				960561BA1F63DDFF0064A0DC /* KJCollectionCell.m */,
+				960561BB1F63DDFF0064A0DC /* KJCollectionCell.xib */,
+				960694611F5EB48C00550791 /* KJAlbumListCell.h */,
+				960694621F5EB48C00550791 /* KJAlbumListCell.m */,
+				960694631F5EB48C00550791 /* KJAlbumListCell.xib */,
+				960694641F5EB48C00550791 /* KJShortPhotoAlbumCell.h */,
+				960694651F5EB48C00550791 /* KJShortPhotoAlbumCell.m */,
+				960694661F5EB48C00550791 /* KJShortPhotoAlbumCell.xib */,
+				960694671F5EB48C00550791 /* KJShortVideoAlbumCell.h */,
+				960694681F5EB48C00550791 /* KJShortVideoAlbumCell.m */,
+				960694691F5EB48C00550791 /* KJShortVideoAlbumCell.xib */,
+				96C09EB11F9F56B300F39D4C /* KJCollectionHeadView.h */,
+				96C09EB21F9F56B300F39D4C /* KJCollectionHeadView.m */,
+				96C09EB31F9F56B300F39D4C /* KJCollectionHeadView.xib */,
+				966D0DA21FA019AF0038B10F /* KJEditVideoCell.h */,
+				966D0DA31FA019AF0038B10F /* KJEditVideoCell.m */,
+				966D0DA41FA019AF0038B10F /* KJEditVideoCell.xib */,
+				962C76DD1FA329F500919DEB /* KJCoverViewCell.h */,
+				962C76DE1FA329F500919DEB /* KJCoverViewCell.m */,
+				962C76DF1FA329F500919DEB /* KJCoverViewCell.xib */,
+			);
+			path = KJAlbumCell;
+			sourceTree = "<group>";
+		};
+		9606946A1F5EB48C00550791 /* KJAlbumModel */ = {
+			isa = PBXGroup;
+			children = (
+				9606946B1F5EB48C00550791 /* KJAlbumModel.h */,
+				9606946C1F5EB48C00550791 /* KJAlbumModel.m */,
+				9606946D1F5EB48C00550791 /* KJPHAsset.h */,
+				9606946E1F5EB48C00550791 /* KJPHAsset.m */,
+				960694A21F5EB59900550791 /* KJUtility.h */,
+				960694A31F5EB59900550791 /* KJUtility.m */,
+			);
+			path = KJAlbumModel;
+			sourceTree = "<group>";
+		};
+		9606946F1F5EB48C00550791 /* KJCamera */ = {
+			isa = PBXGroup;
+			children = (
+				960694701F5EB48C00550791 /* KJCustomCameraController.h */,
+				960694711F5EB48C00550791 /* KJCustomCameraController.m */,
+			);
+			path = KJCamera;
+			sourceTree = "<group>";
+		};
+		960694741F5EB48C00550791 /* KJPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				960694751F5EB48C00550791 /* KJSystemPhotoAlbumController.h */,
+				960694761F5EB48C00550791 /* KJSystemPhotoAlbumController.m */,
+			);
+			path = KJPhotoAlbum;
+			sourceTree = "<group>";
+		};
+		960694771F5EB48C00550791 /* KJVideoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				960694781F5EB48C00550791 /* KJShortVideoPlayer.h */,
+				960694791F5EB48C00550791 /* KJShortVideoPlayer.m */,
+				9606947A1F5EB48C00550791 /* KJSystemVideoAlbumController.h */,
+				9606947B1F5EB48C00550791 /* KJSystemVideoAlbumController.m */,
+			);
+			path = KJVideoAlbum;
+			sourceTree = "<group>";
+		};
+		960694A51F5EB66B00550791 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				960F468E1F98B810006D3560 /* BeautifyFilter */,
+				9640E1421F8CD3B60097AB9A /* KJProgress */,
+				9605316E1F6246DE00977EC0 /* TAOverlay */,
+				960694C11F5EBDDE00550791 /* XLExtension */,
+				960694BA1F5EB69700550791 /* UIKit+BaseExtension.h */,
+				960694BB1F5EB69700550791 /* UIKit+BaseExtension.m */,
+				960694A61F5EB68200550791 /* SGSegmentedControl */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		960694A61F5EB68200550791 /* SGSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				960694A71F5EB68200550791 /* SGImageButton.h */,
+				960694A81F5EB68200550791 /* SGImageButton.m */,
+				960694A91F5EB68200550791 /* SGNavigationItemTitleView.h */,
+				960694AA1F5EB68200550791 /* SGNavigationItemTitleView.m */,
+				960694AB1F5EB68200550791 /* SGSegmentedControl.h */,
+				960694AC1F5EB68200550791 /* SGSegmentedControlBottomView.h */,
+				960694AD1F5EB68200550791 /* SGSegmentedControlBottomView.m */,
+				960694AE1F5EB68200550791 /* SGSegmentedControlDefault.h */,
+				960694AF1F5EB68200550791 /* SGSegmentedControlDefault.m */,
+				960694B01F5EB68200550791 /* SGSegmentedControlStatic.h */,
+				960694B11F5EB68200550791 /* SGSegmentedControlStatic.m */,
+				960694B21F5EB68200550791 /* UIView+SGExtension.h */,
+				960694B31F5EB68200550791 /* UIView+SGExtension.m */,
+			);
+			path = SGSegmentedControl;
+			sourceTree = "<group>";
+		};
+		960694BD1F5EBA8900550791 /* KJVideoCamera */ = {
+			isa = PBXGroup;
+			children = (
+				960694BE1F5EBAAE00550791 /* KJVideoCameraController.h */,
+				960694BF1F5EBAAE00550791 /* KJVideoCameraController.m */,
+			);
+			path = KJVideoCamera;
+			sourceTree = "<group>";
+		};
+		960694C11F5EBDDE00550791 /* XLExtension */ = {
+			isa = PBXGroup;
+			children = (
+				960694C21F5EBDDE00550791 /* UIImage+XLExtension.h */,
+				960694C31F5EBDDE00550791 /* UIImage+XLExtension.m */,
+				960694C41F5EBDDE00550791 /* UIView+XLExtension.h */,
+				960694C51F5EBDDE00550791 /* UIView+XLExtension.m */,
+			);
+			path = XLExtension;
+			sourceTree = "<group>";
+		};
+		960F468E1F98B810006D3560 /* BeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				966D0DD21FA07FCB0038B10F /* LFGPUImageEmptyFilter.h */,
+				966D0DD11FA07FCA0038B10F /* LFGPUImageEmptyFilter.mm */,
+				960F46901F98B853006D3560 /* GPUImageBeautifyFilter.h */,
+				960F468F1F98B853006D3560 /* GPUImageBeautifyFilter.m */,
+				960F46911F98B8CA006D3560 /* FSKGPUImageBeautyFilter.h */,
+				960F46921F98B8CA006D3560 /* FSKGPUImageBeautyFilter.m */,
+			);
+			path = BeautifyFilter;
+			sourceTree = "<group>";
+		};
+		961E7D231F612AA2002343E2 /* KJVideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				961E7D241F612ABC002343E2 /* KJVideoCaptureController.h */,
+				961E7D251F612ABC002343E2 /* KJVideoCaptureController.m */,
+			);
+			path = KJVideoCapture;
+			sourceTree = "<group>";
+		};
+		9640E1421F8CD3B60097AB9A /* KJProgress */ = {
+			isa = PBXGroup;
+			children = (
+				9640E1431F8CD3E10097AB9A /* KJProgressView.h */,
+				9640E1441F8CD3E10097AB9A /* KJProgressView.m */,
+			);
+			path = KJProgress;
+			sourceTree = "<group>";
+		};
+		966D0DA81FA04A0F0038B10F /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				966D0DCB1FA0513D0038B10F /* image0001.jpeg */,
+				966D0DCC1FA0513D0038B10F /* image0002.jpeg */,
+				966D0DC91FA0513D0038B10F /* image0003.jpeg */,
+				966D0DCA1FA0513D0038B10F /* image0004.jpeg */,
+				966D0DBC1FA04FC40038B10F /* music0001.mp3 */,
+				966D0DBE1FA04FC50038B10F /* music0002.mp3 */,
+				966D0DBD1FA04FC50038B10F /* music0003.mp3 */,
+				966D0DC01FA04FC50038B10F /* music0004.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		96C09EAF1F9F4E0500F39D4C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				966D0DA81FA04A0F0038B10F /* Music */,
+				96C09EB01F9F4E3C00F39D4C /* KJFilter.geojson */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DC62E8FB3CAE00902799AB6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4BB97581282E5CA433C4D5 /* Pods-KJAlbumDemo.debug.xcconfig */,
+				D71FE55F03A8B987C989279C /* Pods-KJAlbumDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		960694231F5EB27600550791 /* KJAlbumDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960694511F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemo" */;
+			buildPhases = (
+				87DD7B78103ED6A49326B524 /* [CP] Check Pods Manifest.lock */,
+				960694201F5EB27600550791 /* Sources */,
+				960694211F5EB27600550791 /* Frameworks */,
+				960694221F5EB27600550791 /* Resources */,
+				A89A43614876AE97BF4B9498 /* [CP] Embed Pods Frameworks */,
+				9F733A20178FFBBA95DA3CB8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJAlbumDemo;
+			productName = KJAlbumDemo;
+			productReference = 960694241F5EB27600550791 /* KJAlbumDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9606943C1F5EB27700550791 /* KJAlbumDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960694541F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemoTests" */;
+			buildPhases = (
+				960694391F5EB27700550791 /* Sources */,
+				9606943A1F5EB27700550791 /* Frameworks */,
+				9606943B1F5EB27700550791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9606943F1F5EB27700550791 /* PBXTargetDependency */,
+			);
+			name = KJAlbumDemoTests;
+			productName = KJAlbumDemoTests;
+			productReference = 9606943D1F5EB27700550791 /* KJAlbumDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		960694471F5EB27700550791 /* KJAlbumDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960694571F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemoUITests" */;
+			buildPhases = (
+				960694441F5EB27700550791 /* Sources */,
+				960694451F5EB27700550791 /* Frameworks */,
+				960694461F5EB27700550791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9606944A1F5EB27700550791 /* PBXTargetDependency */,
+			);
+			name = KJAlbumDemoUITests;
+			productName = KJAlbumDemoUITests;
+			productReference = 960694481F5EB27700550791 /* KJAlbumDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9606941C1F5EB27600550791 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Kegem;
+				TargetAttributes = {
+					960694231F5EB27600550791 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = NHFRA6S4N6;
+						ProvisioningStyle = Automatic;
+					};
+					9606943C1F5EB27700550791 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 960694231F5EB27600550791;
+					};
+					960694471F5EB27700550791 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 960694231F5EB27600550791;
+					};
+				};
+			};
+			buildConfigurationList = 9606941F1F5EB27600550791 /* Build configuration list for PBXProject "KJAlbumDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9606941B1F5EB27600550791;
+			productRefGroup = 960694251F5EB27600550791 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				960694231F5EB27600550791 /* KJAlbumDemo */,
+				9606943C1F5EB27700550791 /* KJAlbumDemoTests */,
+				960694471F5EB27700550791 /* KJAlbumDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960694221F5EB27600550791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966D0DA61FA019AF0038B10F /* KJEditVideoCell.xib in Resources */,
+				966D0DCF1FA0513D0038B10F /* image0001.jpeg in Resources */,
+				960694371F5EB27600550791 /* LaunchScreen.storyboard in Resources */,
+				966D0DD01FA0513D0038B10F /* image0002.jpeg in Resources */,
+				960694851F5EB48C00550791 /* KJShortVideoAlbumCell.xib in Resources */,
+				966D0DC41FA04FC50038B10F /* music0001.mp3 in Resources */,
+				966D0DC81FA04FC50038B10F /* music0004.mp3 in Resources */,
+				962C76E11FA329F600919DEB /* KJCoverViewCell.xib in Resources */,
+				966D0DC51FA04FC50038B10F /* music0003.mp3 in Resources */,
+				960694831F5EB48C00550791 /* KJShortPhotoAlbumCell.xib in Resources */,
+				960561BD1F63DDFF0064A0DC /* KJCollectionCell.xib in Resources */,
+				960694341F5EB27600550791 /* Assets.xcassets in Resources */,
+				966D0DCE1FA0513D0038B10F /* image0004.jpeg in Resources */,
+				966D0DA71FA026130038B10F /* KJFilter.geojson in Resources */,
+				960694811F5EB48C00550791 /* KJAlbumListCell.xib in Resources */,
+				960694321F5EB27600550791 /* Main.storyboard in Resources */,
+				966D0DC61FA04FC50038B10F /* music0002.mp3 in Resources */,
+				966D0DCD1FA0513D0038B10F /* image0003.jpeg in Resources */,
+				96C09EB51F9F56B300F39D4C /* KJCollectionHeadView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9606943B1F5EB27700550791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960694461F5EB27700550791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87DD7B78103ED6A49326B524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F733A20178FFBBA95DA3CB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KJAlbumDemo/Pods-KJAlbumDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89A43614876AE97BF4B9498 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KJAlbumDemo/Pods-KJAlbumDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		960694201F5EB27600550791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960694801F5EB48C00550791 /* KJAlbumListCell.m in Sources */,
+				960F46941F98B95A006D3560 /* GPUImageBeautifyFilter.m in Sources */,
+				960694B71F5EB68200550791 /* SGSegmentedControlDefault.m in Sources */,
+				960694871F5EB48C00550791 /* KJPHAsset.m in Sources */,
+				9606948B1F5EB48C00550791 /* KJShortVideoPlayer.m in Sources */,
+				960561BC1F63DDFF0064A0DC /* KJCollectionCell.m in Sources */,
+				9606942F1F5EB27600550791 /* ViewController.m in Sources */,
+				960F46931F98B8CA006D3560 /* FSKGPUImageBeautyFilter.m in Sources */,
+				9606948D1F5EB48C00550791 /* KJVideoAlbumController.m in Sources */,
+				960694B91F5EB68200550791 /* UIView+SGExtension.m in Sources */,
+				960694B41F5EB68200550791 /* SGImageButton.m in Sources */,
+				966D0DA51FA019AF0038B10F /* KJEditVideoCell.m in Sources */,
+				960694861F5EB48C00550791 /* KJAlbumModel.m in Sources */,
+				960694C01F5EBAAE00550791 /* KJVideoCameraController.m in Sources */,
+				9606948C1F5EB48C00550791 /* KJSystemVideoAlbumController.m in Sources */,
+				960694B61F5EB68200550791 /* SGSegmentedControlBottomView.m in Sources */,
+				962C76DC1FA3196100919DEB /* KJSelectedCoverController.m in Sources */,
+				962C76E01FA329F600919DEB /* KJCoverViewCell.m in Sources */,
+				960694891F5EB48C00550791 /* KJImageAlbumController.m in Sources */,
+				960531711F6246DE00977EC0 /* DLHDActivityIndicator.m in Sources */,
+				9640E1451F8CD3E10097AB9A /* KJProgressView.m in Sources */,
+				960694C71F5EBDDE00550791 /* UIView+XLExtension.m in Sources */,
+				9606948A1F5EB48C00550791 /* KJSystemPhotoAlbumController.m in Sources */,
+				960694C61F5EBDDE00550791 /* UIImage+XLExtension.m in Sources */,
+				966D0DD31FA07FCB0038B10F /* LFGPUImageEmptyFilter.mm in Sources */,
+				960694B51F5EB68200550791 /* SGNavigationItemTitleView.m in Sources */,
+				960694821F5EB48C00550791 /* KJShortPhotoAlbumCell.m in Sources */,
+				960694A41F5EB59900550791 /* KJUtility.m in Sources */,
+				961E7D261F612ABC002343E2 /* KJVideoCaptureController.m in Sources */,
+				9602853F1F9F354E0089A90C /* KJEditVideoViewController.m in Sources */,
+				960694BC1F5EB69700550791 /* UIKit+BaseExtension.m in Sources */,
+				960694B81F5EB68200550791 /* SGSegmentedControlStatic.m in Sources */,
+				9606947F1F5EB48C00550791 /* KJAlbumBrowsController.m in Sources */,
+				96C09EB41F9F56B300F39D4C /* KJCollectionHeadView.m in Sources */,
+				9606942C1F5EB27600550791 /* AppDelegate.m in Sources */,
+				960694291F5EB27600550791 /* main.m in Sources */,
+				960694841F5EB48C00550791 /* KJShortVideoAlbumCell.m in Sources */,
+				960694881F5EB48C00550791 /* KJCustomCameraController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960694391F5EB27700550791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960694421F5EB27700550791 /* KJAlbumDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		960694441F5EB27700550791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9606944D1F5EB27700550791 /* KJAlbumDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9606943F1F5EB27700550791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960694231F5EB27600550791 /* KJAlbumDemo */;
+			targetProxy = 9606943E1F5EB27700550791 /* PBXContainerItemProxy */;
+		};
+		9606944A1F5EB27700550791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 960694231F5EB27600550791 /* KJAlbumDemo */;
+			targetProxy = 960694491F5EB27700550791 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		960694301F5EB27600550791 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960694311F5EB27600550791 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		960694351F5EB27600550791 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				960694361F5EB27600550791 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9606944F1F5EB27700550791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		960694501F5EB27700550791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		960694521F5EB27700550791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4BB97581282E5CA433C4D5 /* Pods-KJAlbumDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhou Yu (CL999RSXY9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHFRA6S4N6;
+				INFOPLIST_FILE = KJAlbumDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		960694531F5EB27700550791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71FE55F03A8B987C989279C /* Pods-KJAlbumDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhou Yu (NHFRA6S4N6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NHFRA6S4N6;
+				INFOPLIST_FILE = KJAlbumDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		960694551F5EB27700550791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KJAlbumDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJAlbumDemo.app/KJAlbumDemo";
+			};
+			name = Debug;
+		};
+		960694561F5EB27700550791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KJAlbumDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJAlbumDemo.app/KJAlbumDemo";
+			};
+			name = Release;
+		};
+		960694581F5EB27700550791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KJAlbumDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KJAlbumDemo;
+			};
+			name = Debug;
+		};
+		960694591F5EB27700550791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KJAlbumDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "kegem-foxmail.com.KJAlbumDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KJAlbumDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9606941F1F5EB27600550791 /* Build configuration list for PBXProject "KJAlbumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9606944F1F5EB27700550791 /* Debug */,
+				960694501F5EB27700550791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960694511F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960694521F5EB27700550791 /* Debug */,
+				960694531F5EB27700550791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960694541F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960694551F5EB27700550791 /* Debug */,
+				960694561F5EB27700550791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		960694571F5EB27700550791 /* Build configuration list for PBXNativeTarget "KJAlbumDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960694581F5EB27700550791 /* Debug */,
+				960694591F5EB27700550791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9606941C1F5EB27600550791 /* Project object */;
+}
