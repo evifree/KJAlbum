@@ -76,6 +76,16 @@
         make.width.mas_equalTo(60.0f);
     }];
     
+    UILabel *label = [[UILabel alloc] init];
+    label.font = [UIFont systemFontOfSize:15.0f];
+    label.textColor = [UIColor whiteColor];
+    label.text = @"选择封面图";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.kj_topView addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(weakSelf.kj_topView);
+    }];
+    
     self.kj_btnComplete = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.kj_btnComplete setTitleColor:[UIColor colorWithHex:0x000000] forState:UIControlStateNormal];
     [self.kj_btnComplete setBackgroundColor:[UIColor colorWithHex:sYellowColor]];
