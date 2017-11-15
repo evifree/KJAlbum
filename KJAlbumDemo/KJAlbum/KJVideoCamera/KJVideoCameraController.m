@@ -7,7 +7,6 @@
 //
 
 #import "KJVideoCameraController.h"
-#import <GPUImage/GPUImage.h>
 #import "FSKGPUImageBeautyFilter.h"
 #import "KJPHAsset.h"
 #import "KJAlbumModel.h"

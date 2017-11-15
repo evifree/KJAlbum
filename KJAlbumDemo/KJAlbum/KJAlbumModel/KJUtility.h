@@ -12,7 +12,7 @@
 #import <YYWebImage.h>
 #import <Masonry.h>
 #import <YYAnimatedImageView.h>
-#import <GPUImage/GPUImage.h>
+#import "GPUImage.h"
 
 @protocol KJCustomCameraDelegate <NSObject>
 
@@ -186,5 +186,13 @@
  */
 + (UIImage *)kj_imageProcessedUsingGPUImage:(UIImage *)image
                              withFilterName:(NSString *)filterName;
+
+/**
+ 视频的旋转角度
+ 
+ @param url 视频
+ @return 角度
+ */
++ (NSUInteger)kj_degressFromVideoFileWithURL:(NSURL *)url;
 
 @end

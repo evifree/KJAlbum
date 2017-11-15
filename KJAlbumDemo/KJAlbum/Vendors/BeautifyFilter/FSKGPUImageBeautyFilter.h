@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Kegem. All rights reserved.
 //
 
-#import <GPUImage/GPUImage.h>
+#import "GPUImage.h"
 
 @interface FSKGPUImageBeautyFilter : GPUImageFilter
 

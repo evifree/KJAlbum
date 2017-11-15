@@ -8,7 +8,6 @@
 
 #import "KJEditVideoViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import <GPUImage/GPUImage.h>
 #import "KJCollectionHeadView.h"
 #import "KJEditVideoCell.h"
 #import "LFGPUImageEmptyFilter.h"
@@ -242,7 +241,8 @@
     self.kj_filterView = [[GPUImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH)];
     [self.kj_imgView addSubview:self.kj_filterView];
     [self.kj_filter addTarget:self.kj_filterView];
-    
+    CGAffineTransform rotate = CGAffineTransformMakeRotation([KJUtility kj_degressFromVideoFileWithURL:self.kj_videoUrl] / 180.0 * M_PI );
+    _kj_filterView.transform = rotate;
     [self.kj_imgView bringSubviewToFront:self.kj_filterView];
     
     [self addNotification];
@@ -404,6 +404,9 @@
 - (void)filterCompositionForFilter:(GPUImageOutput<GPUImageInput> *)filter withVideoUrl:(NSURL *)videoUrl {
     if (videoUrl) {
         WS(weakSelf)
+        NSUInteger a = [KJUtility kj_degressFromVideoFileWithURL:videoUrl];
+        CGAffineTransform rotate = CGAffineTransformMakeRotation(a / 180.0 * M_PI );
+        
         GPUImageOutput<GPUImageInput> *tmpFilter = filter;
         kj_movieComposition = [[GPUImageMovie alloc] initWithURL:videoUrl];
         kj_movieComposition.runBenchmark = YES;
@@ -416,11 +419,15 @@
         unlink([newPath UTF8String]);
         NSLog(@"%f,%f",self.kj_player.currentItem.presentationSize.height,self.kj_player.currentItem.presentationSize.width);
         CGSize videoSize = self.kj_player.currentItem.presentationSize;
+        if (a == 90 || a == 270) {
+            videoSize = CGSizeMake(videoSize.height, videoSize.width);
+        }
+        
         NSURL *tmpUrl = [NSURL fileURLWithPath:newPath];
         [self.kj_newVideoPathArray addObject:tmpUrl];
         kj_movieWriter  = [[GPUImageMovieWriter alloc] initWithMovieURL:tmpUrl size:videoSize];
+        kj_movieWriter.transform = rotate;
         kj_movieWriter.shouldPassthroughAudio = YES;
-        kj_movieWriter.allowWriteAudio = YES;
         kj_movieComposition.audioEncodingTarget = kj_movieWriter;
         [tmpFilter addTarget:kj_movieWriter];
         [kj_movieComposition enableSynchronizedEncodingUsingMovieWriter:kj_movieWriter];
@@ -487,6 +494,7 @@
         //采集kj_videoAsset中的视频
         NSArray *videoArray = [kj_videoAsset tracksWithMediaType:AVMediaTypeVideo];
         AVAssetTrack *kj_assetVideo = videoArray.firstObject;
+        [kj_videoTrack setPreferredTransform:kj_assetVideo.preferredTransform];
         //采集的视频加入到视频通道kj_videoTrack
         NSError *kj_videoError = nil;
         BOOL isComplete_video = [kj_videoTrack insertTimeRange:kj_videoTimeRange
